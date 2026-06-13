@@ -10,5 +10,16 @@
 
 #! Let me knoe complex number class
 
+c1 = 3+4j
+c2 = 4+5j
+print(type(c1))
+print(type(c2))
+print(c1+c2)
+print(c1-c2)
+print(c1*c2)
+print(c1/c2)
 
-print('hallo')
+c = complex()
+print(c)
+print(c1.conjugate())
+print(c1)
