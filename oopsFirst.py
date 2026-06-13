@@ -80,3 +80,5 @@ s2 = Student("Goku",2,50)
 # print(f'id of s2:-{id(s2)}')
 s2.study()
 s2.play()
+
+print('Hallo')
