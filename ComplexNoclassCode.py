@@ -44,6 +44,21 @@ class ComplexNumber:
 
         ans = ComplexNumber(resultReal,resultImag)
         return ans
+    
+    def __truediv__(self, other):
+        print("I perform Division!")
+        resultReal = 0
+        resultImag = 0
+
+        den = other.real**2 + other.imag**2
+        ans = self * ComplexNumber((other.real)/den,(-1*other.imag)/den)
+        return ans
+    
+    def __eq__(self, other):
+        return (self.real == other.real) and (self.imag == other.imag)
+
+    # def __neq__(self,other):
+    #     return (self.real != other.real) and (self.imag != other.imag)
 
     def Conjugate(self):
         imag  = - self.imag
@@ -59,7 +74,10 @@ print(ComNum)
 print(type(ComNum.Conjugate()))
 print(ComNum.Conjugate())
 ComNum1 = ComplexNumber(3,4)
-ComNum2 = ComplexNumber(4,5)
+ComNum2 = ComplexNumber(3,4)
 print(ComNum1+ComNum2)
 print(ComNum1-ComNum2)
 print(ComNum1*ComNum2)
+print((ComNum1/ComNum2))
+print((ComNum1==ComNum2))
+print(ComNum1!=ComNum2)

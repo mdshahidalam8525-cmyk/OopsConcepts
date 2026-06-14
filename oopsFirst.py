@@ -60,6 +60,7 @@ class Student:
     #! its automatically called object is created
     def __init__(self,name,rollNumber,marks):
         #? Data or members
+        
         self.name = name
         self.rollNumber = rollNumber
         self.marks = marks
