@@ -23,3 +23,6 @@ c = complex()
 print(c)
 print(c1.conjugate())
 print(c1)
+
+# x = 1 + [1,2,3]
+# print(x)
